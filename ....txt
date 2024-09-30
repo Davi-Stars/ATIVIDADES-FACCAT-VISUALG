@@ -1,0 +1,868 @@
+início
+  // solução do exercício 1
+  var A, B: inteiro
+  A <- 10
+  B <- 20
+  A <- A + B
+  B <- A - B
+  A <- A - B
+  escreva("A: ", A, " B: ", B)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 2
+  // a) 
+  var A, B: inteiro
+  A <- 10
+  B <- 20
+  escreva(B)
+  B <- 5
+  escreva(A, B)
+  
+  // b)
+  var C: inteiro
+  A <- 30
+  B <- 20
+  C <- A + B
+  escreva(C)
+  B <- 10
+  escreva(B, C)
+  C <- A + B
+  escreva(A, B, C)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 3
+  var A, B, C: real
+  A <- 4/2 + 2/4
+  B <- 4/(2+2)/4
+  C <- (4+2)*2-4
+  escreva(A, B, C)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 4
+  var A, B, C, D, E, F, G, H, I, J: real
+  A <- 6*(3+2)
+  B <- 2+(6*(3+2))
+  C <- 2+(3*6)/(2+4)
+  D <- 2*(8/(3+1))
+  E <- 3+(16-2)/(2*(9-2))
+  F <- (6/3)+(8/2)
+  G <- ((3+(8/2))*4)+(3*2)
+  H <- (6*(3*3)+6)-10
+  I <- (((10*8)+3)*9)
+  J <- ((-12)*(-4))+(3*(-4))
+  escreva(A, B, C, D, E, F, G, H, I, J)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 5
+  var valor: inteiro
+  escreva("Digite um valor: ")
+  leia(valor)
+  escreva("Antecessor: ", valor - 1)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 6
+  var base, altura, area: real
+  escreva("Digite a base e a altura do retângulo: ")
+  leia(base, altura)
+  area <- base * altura
+  escreva("Área do retângulo: ", area)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 7
+  var anos, meses, dias, totalDias: inteiro
+  escreva("Digite a idade em anos, meses e dias: ")
+  leia(anos, meses, dias)
+  totalDias <- (anos * 365) + (meses * 30) + dias
+  escreva("Idade em dias: ", totalDias)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 8
+  var eleitores, brancos, nulos, validos: inteiro
+  escreva("Digite o número total de eleitores: ")
+  leia(eleitores)
+  escreva("Digite o número de votos brancos: ")
+  leia(brancos)
+  escreva("Digite o número de votos nulos: ")
+  leia(nulos)
+  escreva("Digite o número de votos válidos: ")
+  leia(validos)
+  escreva("Percentual de votos brancos: ", (brancos / eleitores) * 100)
+  escreva("Percentual de votos nulos: ", (nulos / eleitores) * 100)
+  escreva("Percentual de votos válidos: ", (validos / eleitores) * 100)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 9
+  var salarioAtual, percentual, novoSalario: real
+  escreva("Digite o salário atual: ")
+  leia(salarioAtual)
+  escreva("Digite o percentual de reajuste: ")
+  leia(percentual)
+  novoSalario <- salarioAtual + (salarioAtual * percentual / 100)
+  escreva("Novo salário: ", novoSalario)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 10
+  var custoFabrica, custoFinal: real
+  escreva("Digite o custo de fábrica: ")
+  leia(custoFabrica)
+  custoFinal <- custoFabrica + (custoFabrica * 0.28) + (custoFabrica * 0.45)
+  escreva("Custo final ao consumidor: ", custoFinal)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 11
+  var numCarros, valorVendas, salarioFixo, comissao, salarioFinal: real
+  escreva("Digite o número de carros vendidos: ")
+  leia(numCarros)
+  escreva("Digite o valor total das vendas: ")
+  leia(valorVendas)
+  escreva("Digite o salário fixo: ")
+  leia(salarioFixo)
+  escreva("Digite o valor da comissão por carro vendido: ")
+  leia(comissao)
+  salarioFinal <- salarioFixo + (numCarros * comissao) + (valorVendas * 0.05)
+  escreva("Salário final: ", salarioFinal)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 12
+  var F, C: real
+  escreva("Digite a temperatura em Fahrenheit: ")
+  leia(F)
+  C <- (F - 32) * 5 / 9
+  escreva("Temperatura em Celsius: ", C)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 13
+  var n1, n2, n3, mediaFinal: real
+  escreva("Digite as três notas: ")
+  leia(n1, n2, n3)
+  mediaFinal <- (n1 * 2 + n2 * 3 + n3 * 5) / 10
+  escreva("Média final: ", mediaFinal)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 14
+  var valor: real
+  escreva("Digite um valor: ")
+  leia(valor)
+  se valor > 10 entao
+    escreva("É MAIOR QUE 10!")
+  senao
+    escreva("NÃO É MAIOR QUE 10!")
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 15
+  var valor: real
+  escreva("Digite um valor: ")
+  leia(valor)
+  se valor >= 0 entao
+    escreva("Positivo")
+  senao
+    escreva("Negativo")
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 16
+  var numMacas, preco: real
+  escreva("Digite o número de maçãs compradas: ")
+  leia(numMacas)
+  se numMacas < 12 entao
+    preco <- numMacas * 1.30
+  senao
+    preco <- numMacas * 1.00
+  fimse
+  escreva("Custo total: ", preco)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 17
+  var nota1, nota2, media: real
+  escreva("Digite as notas das duas avaliações: ")
+  leia(nota1, nota2)
+  media <- (nota1 + nota2) / 2
+  se media >= 6 entao
+    escreva("Aprovado")
+  senao
+    escreva("Reprovado")
+  fimse
+  escreva("Média: ", media)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 18
+  var anoAtual, anoNascimento, idade: inteiro
+  escreva("Digite o ano atual e o ano de nascimento: ")
+  leia(anoAtual, anoNascimento)
+  idade <- anoAtual - anoNascimento
+  se idade >= 16 entao
+    escreva("Pode votar")
+  senao
+    escreva("Não pode votar")
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 19
+  var valor1, valor2: real
+  escreva("Digite dois valores diferentes: ")
+  leia(valor1, valor2)
+  se valor1 > valor2 entao
+    escreva("O maior é: ", valor1)
+  senao
+    escreva("O maior é: ", valor2)
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 20
+  var valor1, valor2: real
+  escreva("Digite dois valores diferentes: ")
+  leia(valor1, valor2)
+  se valor1 < valor2 entao
+    escreva(valor1, ", ", valor2)
+  senao
+    escreva(valor2, ", ", valor1)
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 21
+  var inicio, fim, duracao: inteiro
+  escreva("Digite a hora de início e a hora de fim do jogo: ")
+  leia(inicio, fim)
+  se fim > inicio entao
+    duracao <- fim - inicio
+  senao
+    duracao <- (24 - inicio) + fim
+  fimse
+  escreva("Duração do jogo: ", duracao, " horas")
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 22
+  var horasTrabalhadas, salarioHora, salarioTotal: real
+  escreva("Digite o número de horas trabalhadas no mês: ")
+  leia(horasTrabalhadas)
+  escreva("Digite o valor da hora: ")
+  leia(salarioHora)
+  se horasTrabalhadas > 160 entao
+    salarioTotal <- (160 * salarioHora) + ((horasTrabalhadas - 160) * (salarioHora * 1.5))
+  senao
+    salarioTotal <- horasTrabalhadas * salarioHora
+  fimse
+  escreva("Salário total: ", salarioTotal)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 23
+  var nome: caractere
+  var altura: real
+  var sexo: caractere
+  var pesoIdeal: real
+  escreva("Digite o nome, sexo (M ou F) e altura: ")
+  leia(nome, sexo, altura)
+  se sexo = "M" entao
+    pesoIdeal <- (72.7 * altura) - 58
+  senao
+    pesoIdeal <- (62.1 * altura) - 44.7
+  fimse
+  escreva("Peso ideal: ", pesoIdeal)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 24
+  var salarioFixo, valorVendas, salarioTotal: real
+  escreva("Digite o salário fixo e o valor das vendas: ")
+  leia(salarioFixo, valorVendas)
+  se valorVendas <= 1500 entao
+    salarioTotal <- salarioFixo + (valorVendas * 0.03)
+  senao
+    salarioTotal <- salarioFixo + (1500 * 0.03) + ((valorVendas - 1500) * 0.05)
+  fimse
+  escreva("Salário total: ", salarioTotal)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 25
+  var numConta: inteiro
+  var saldo, debito, credito, saldoAtual: real
+  escreva("Digite o número da conta, saldo, débito e crédito: ")
+  leia(numConta, saldo, debito, credito)
+  saldoAtual <- saldo - debito + credito
+  escreva("Saldo atual: ", saldoAtual)
+  se saldoAtual >= 0 entao
+    escreva("Saldo Positivo")
+  senao
+    escreva("Saldo Negativo")
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 26
+  var qtdAtual, qtdMax, qtdMin, qtdMedia: real
+  escreva("Digite a quantidade atual, máxima e mínima em estoque: ")
+  leia(qtdAtual, qtdMax, qtdMin)
+  qtdMedia <- (qtdMax + qtdMin) / 2
+  se qtdAtual >= qtdMedia entao
+    escreva("Não efetuar compra")
+  senao
+    escreva("Efetuar compra")
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 27
+  var valor: real
+  escreva("Digite um valor: ")
+  leia(valor)
+  se valor > 0 entao
+    escreva("Positivo")
+  senao
+    se valor = 0 entao
+      escreva("Zero")
+    senao
+      escreva("Negativo")
+    fimse
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 28
+  var valor1, valor2, valor3: real
+  escreva("Digite três valores diferentes: ")
+  leia(valor1, valor2, valor3)
+  se (valor1 > valor2) e (valor1 > valor3) entao
+    escreva("Maior: ", valor1)
+  senao
+    se (valor2 > valor1) e (valor2 > valor3) entao
+      escreva("Maior: ", valor2)
+    senao
+      escreva("Maior: ", valor3)
+    fimse
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 29
+  var valor1, valor2, valor3, soma: real
+  escreva("Digite três valores diferentes: ")
+  leia(valor1, valor2, valor3)
+  se valor1 < valor2 e valor1 < valor3 entao
+    soma <- valor2 + valor3
+  senao
+    se valor2 < valor1 e valor2 < valor3 entao
+      soma <- valor1 + valor3
+    senao
+      soma <- valor1 + valor2
+    fimse
+  fimse
+  escreva("Soma dos dois maiores valores: ", soma)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 30
+  var valor1, valor2, valor3: real
+  escreva("Digite três valores diferentes: ")
+  leia(valor1, valor2, valor3)
+  se valor1 < valor2 e valor1 < valor3 entao
+    se valor2 < valor3 entao
+      escreva(valor1, ", ", valor2, ", ", valor3)
+    senao
+      escreva(valor1, ", ", valor3, ", ", valor2)
+    fimse
+  senao
+    se valor2 < valor1 e valor2 < valor3 entao
+      se valor1 < valor3 entao
+        escreva(valor2, ", ", valor1, ", ", valor3)
+      senao
+        escreva(valor2, ", ", valor3, ", ", valor1)
+      fimse
+    senao
+      se valor1 < valor2 entao
+        escreva(valor3, ", ", valor1, ", ", valor2)
+      senao
+        escreva(valor3, ", ", valor2, ", ", valor1)
+      fimse
+    fimse
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 31
+  var A, B, C: real
+  escreva("Digite os três lados do triângulo: ")
+  leia(A, B, C)
+  se (A < B + C) e (B < A + C) e (C < A + B) entao
+    escreva("Formam um triângulo")
+  senao
+    escreva("Não formam um triângulo")
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 32
+  var time1, time2: caractere
+  var gols1, gols2: inteiro
+  escreva("Digite o nome do primeiro time: ")
+  leia(time1)
+  escreva("Digite o nome do segundo time: ")
+  leia(time2)
+  escreva("Digite o número de gols do ", time1, ": ")
+  leia(gols1)
+  escreva("Digite o número de gols do ", time2, ": ")
+  leia(gols2)
+  se gols1 > gols2 entao
+    escreva("Vencedor: ", time1)
+  senao
+    se gols2 > gols1 entao
+      escreva("Vencedor: ", time2)
+    senao
+      escreva("EMPATE")
+    fimse
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 33
+  var valor1, valor2: real
+  escreva("Digite dois valores: ")
+  leia(valor1, valor2)
+  se valor1 = valor2 entao
+    escreva("Números iguais")
+  senao
+    se valor1 > valor2 entao
+      escreva("Primeiro é maior")
+    senao
+      escreva("Segundo é maior")
+    fimse
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 34
+  var x, y, z: real
+  var resposta: caractere
+  escreva("Digite dois valores: ")
+  leia(x, y)
+  z <- (x * y) + 5
+  se z <= 0 entao
+    resposta <- 'A'
+  senao
+    se z <= 100 entao
+      resposta <- 'B'
+    senao
+      resposta <- 'C'
+    fimse
+  fimse
+  escreva("Z: ", z, " Resposta: ", resposta)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 35
+  var litros: real
+  var combustivel: caractere
+  var valor: real
+  escreva("Digite o número de litros vendidos: ")
+  leia(litros)
+  escreva("Digite o tipo de combustível (A-álcool, G-gasolina): ")
+  leia(combustivel)
+  se combustivel = "A" entao
+    se litros <= 20 entao
+      valor <- litros * 2.90 * 0.97
+    senao
+      valor <- litros * 2.90 * 0.95
+    fimse
+  senao
+    se combustivel = "G" entao
+      se litros <= 20 entao
+        valor <- litros * 3.30 * 0.96
+      senao
+        valor <- litros * 3.30 * 0.94
+      fimse
+    fimse
+  fimse
+  escreva("Valor a pagar: ", valor)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 36
+  var idadeHomem1, idadeHomem2, idadeMulher1, idadeMulher2: inteiro
+  var soma, produto: inteiro
+  escreva("Digite as idades dos dois homens: ")
+  leia(idadeHomem1, idadeHomem2)
+  escreva("Digite as idades das duas mulheres: ")
+  leia(idadeMulher1, idadeMulher2)
+  se idadeHomem1 > idadeHomem2 entao
+    se idadeMulher1 < idadeMulher2 entao
+      soma <- idadeHomem1 + idadeMulher1
+      produto <- idadeHomem2 * idadeMulher2
+    senao
+      soma <- idadeHomem1 + idadeMulher2
+      produto <- idadeHomem2 * idadeMulher1
+    fimse
+  senao
+    se idadeMulher1 < idadeMulher2 entao
+      soma <- idadeHomem2 + idadeMulher1
+      produto <- idadeHomem1 * idadeMulher2
+    senao
+      soma <- idadeHomem2 + idadeMulher2
+      produto <- idadeHomem1 * idadeMulher1
+    fimse
+  fimse
+  escreva("Soma: ", soma)
+  escreva("Produto: ", produto)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 37
+  var kgMorango, kgMaca, precoMorango, precoMaca, total, desconto: real
+  escreva("Digite a quantidade de morangos (kg): ")
+  leia(kgMorango)
+  escreva("Digite a quantidade de maçãs (kg): ")
+  leia(kgMaca)
+  se kgMorango <= 5 entao
+    precoMorango <- kgMorango * 2.50
+  senao
+    precoMorango <- kgMorango * 2.20
+  fimse
+  se kgMaca <= 5 entao
+    precoMaca <- kgMaca * 1.80
+  senao
+    precoMaca <- kgMaca * 1.50
+  fimse
+  total <- precoMorango + precoMaca
+  se (kgMorango + kgMaca > 8) ou (total > 25) entao
+    desconto <- total * 0.10
+  senao
+    desconto <- 0
+  fimse
+  escreva("Total a pagar: ", total - desconto)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 38
+  var codigoUsuario, senha: inteiro
+  escreva("Digite o código do usuário: ")
+  leia(codigoUsuario)
+  se codigoUsuario = 1234 entao
+    escreva("Digite a senha: ")
+    leia(senha)
+    se senha = 9999 entao
+      escreva("Acesso permitido")
+    senao
+      escreva("Senha incorreta")
+    fimse
+  senao
+    escreva("Usuário inválido")
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 39
+  var A, B, C: logico
+  A <- verdadeiro
+  B <- verdadeiro
+  C <- falso
+  escreva((A e B) ou (A xou B))
+  escreva((A ou B) e (A e C))
+  escreva(A ou C e B xou A e nao B)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 40
+  var descricao: caractere
+  var quantidade: inteiro
+  var precoUnitario, total, desconto, totalPagar: real
+  escreva("Digite a descrição do produto: ")
+  leia(descricao)
+  escreva("Digite a quantidade adquirida: ")
+  leia(quantidade)
+  escreva("Digite o preço unitário: ")
+  leia(precoUnitario)
+  total <- quantidade * precoUnitario
+  se quantidade <= 5 entao
+    desconto <- total * 0.02
+  senao
+    se quantidade <= 10 entao
+      desconto <- total * 0.03
+    senao
+      desconto <- total * 0.05
+    fimse
+  fimse
+  totalPagar <- total - desconto
+  escreva("Total a pagar: ", totalPagar)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 41
+  var N1, N2, N3, MediaExercicios, MediaAproveitamento: real
+  var conceito: caractere
+  escreva("Digite as três notas: ")
+  leia(N1, N2, N3)
+  escreva("Digite a média dos exercícios: ")
+  leia(MediaExercicios)
+  MediaAproveitamento <- (N1 + N2 * 2 + N3 * 3 + MediaExercicios) / 7
+  se MediaAproveitamento >= 9 entao
+    conceito <- "A"
+  senao
+    se MediaAproveitamento >= 7.5 entao
+      conceito <- "B"
+    senao
+      se MediaAproveitamento >= 6 entao
+        conceito <- "C"
+      senao
+        conceito <- "D"
+      fimse
+    fimse
+  fimse
+  escreva("Conceito: ", conceito)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 42
+  var codigoEmpregado, anoNascimento, anoIngresso, idade, tempoTrabalho: inteiro
+  escreva("Digite o código do empregado: ")
+  leia(codigoEmpregado)
+  escreva("Digite o ano de nascimento: ")
+  leia(anoNascimento)
+  escreva("Digite o ano de ingresso na empresa: ")
+  leia(anoIngresso)
+  idade <- 2024 - anoNascimento
+  tempoTrabalho <- 2024 - anoIngresso
+  escreva("Idade: ", idade)
+  escreva("Tempo de trabalho: ", tempoTrabalho)
+  se idade >= 65 ou tempoTrabalho >= 30 ou (idade >= 60 e tempoTrabalho >= 25) entao
+    escreva("Requerer aposentadoria")
+  senao
+    escreva("Não requerer aposentadoria")
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 43
+  var a, b, c: real
+  var mens: caractere
+  escreva("Digite os três lados do triângulo: ")
+  leia(a, b, c)
+  se (a < b + c) e (b < a + c) e (c < a + b) entao
+    se (a = b) e (b = c) entao
+      mens <- "Triângulo Equilátero"
+    senao
+      se (a = b) ou (b = c) ou (a = c) entao
+        mens <- "Triângulo Isósceles"
+      senao
+        mens <- "Triângulo Escaleno"
+      fimse
+    fimse
+  senao
+    mens <- "Não é possível formar um triângulo"
+  fimse
+  escreva(mens)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 44
+  var valor1, valor2: real
+  repita
+    escreva("Digite o segundo valor (não pode ser zero): ")
+    leia(valor2)
+  ate valor2 <> 0
+  escreva("Resultado da divisão: ", valor1 / valor2)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 45
+  var valor1, valor2: real
+  escreva("Digite dois valores: ")
+  leia(valor1)
+  enquanto valor2 = 0 faca
+    escreva("O segundo valor não pode ser zero. Digite novamente: ")
+    leia(valor2)
+  fimenquanto
+  escreva("Resultado da divisão: ", valor1 / valor2)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 46
+  var valor1, valor2: real
+  escreva("Digite dois valores: ")
+  leia(valor1)
+  repita
+    escreva("Digite o segundo valor (não pode ser zero): ")
+    leia(valor2)
+    se valor2 = 0 entao
+      escreva("VALOR INVÁLIDO")
+    fimse
+  ate valor2 <> 0
+  escreva("Resultado da divisão: ", valor1 / valor2)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 47
+  var valor1, valor2: real
+  escreva("Digite dois valores: ")
+  leia(valor1)
+  enquanto valor2 = 0 faca
+    escreva("O segundo valor não pode ser zero. Digite novamente: ")
+    leia(valor2)
+    se valor2 = 0 entao
+      escreva("VALOR INVÁLIDO")
+    fimse
+  fimenquanto
+  escreva("Resultado da divisão: ", valor1 / valor2)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 48
+  var nota1, nota2, media: real
+  repita
+    escreva("Digite a primeira nota (entre 0 e 10): ")
+    leia(nota1)
+  ate nota1 >= 0 e nota1 <= 10
+  repita
+    escreva("Digite a segunda nota (entre 0 e 10): ")
+    leia(nota2)
+  ate nota2 >= 0 e nota2 <= 10
+  media <- (nota1 + nota2) / 2
+  escreva("Média: ", media)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 49
+  var nota1, nota2, media: real
+  var continuar: caractere
+  repita
+    repita
+      escreva("Digite a primeira nota (entre 0 e 10): ")
+      leia(nota1)
+    ate nota1 >= 0 e nota1 <= 10
+    repita
+      escreva("Digite a segunda nota (entre 0 e 10): ")
+      leia(nota2)
+    ate nota2 >= 0 e nota2 <= 10
+    media <- (nota1 + nota2) / 2
+    escreva("Média: ", media)
+    escreva("NOVO CÁLCULO (S/N)? ")
+    leia(continuar)
+  ate continuar = "N"
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // solução do exercício 50
+  var i: inteiro
+  para i de 1 ate 10 faca
+    escreva(i)
+  fimpara
+fim
